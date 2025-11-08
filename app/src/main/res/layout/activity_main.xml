@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="DriverSafe"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#F2AF57"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameentry"
+        android:layout_width="317dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/plaintextsh"
+        android:ems="10"
+        android:hint="Enter Your Name"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/vehiclenumber"
+        android:layout_width="317dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/plaintextsh"
+        android:ems="10"
+        android:hint="Enter Vehicle Number"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/nameentry"
+        app:layout_constraintStart_toStartOf="@+id/nameentry"
+        app:layout_constraintTop_toBottomOf="@+id/nameentry" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CameraPermissionbutton"
+        android:layout_width="333dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/selectbutton"
+        android:drawableLeft="@drawable/camera_svgrepo_com"
+        android:fontFamily="@font/lato_regular"
+        android:paddingLeft="20dp"
+        android:text="Allow Access To Camera"
+        android:textColor="#503E3E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/vehiclenumber"
+        app:layout_constraintStart_toStartOf="@+id/vehiclenumber"
+        app:layout_constraintTop_toBottomOf="@+id/vehiclenumber" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/GpsPermissionButton"
+        android:layout_width="333dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selectbutton"
+        android:drawableLeft="@drawable/gps_svgrepo_com"
+        android:fontFamily="@font/lato_regular"
+        android:paddingLeft="20dp"
+        android:text="Allow Access For GPS"
+        android:textColor="#503E3E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/CameraPermissionbutton"
+        app:layout_constraintStart_toStartOf="@+id/CameraPermissionbutton"
+        app:layout_constraintTop_toBottomOf="@+id/CameraPermissionbutton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextbutton"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/nextbut"
+        android:fontFamily="@font/yeon"
+        android:text="Next"
+        android:textColor="#2F2E2B"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/GpsPermissionButton"
+        app:layout_constraintStart_toStartOf="@+id/GpsPermissionButton"
+        app:layout_constraintTop_toBottomOf="@+id/GpsPermissionButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

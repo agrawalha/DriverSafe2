@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".SelectionPage">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:outlineSpotShadowColor="@color/textcolour"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView8"
+        app:layout_constraintStart_toStartOf="@+id/cardView8"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/adddocs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cartgreen">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/add_folder_svgrepo_com"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/yeon"
+                android:text="Add Documents"
+                android:textSize="20sp"
+                android:textColor="@color/textcolour"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:outlineSpotShadowColor="@color/textcolour"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView7"
+        app:layout_constraintStart_toStartOf="@+id/cardView7"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewdocs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cartgreen">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/documents_files_and_folders_svgrepo_com"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/yeon"
+                android:text="View Documents"
+                android:textSize="20sp"
+                android:textColor="@color/textcolour"
+                app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                app:layout_constraintStart_toStartOf="@+id/imageView7"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="20dp"
+        android:outlineSpotShadowColor="@color/textcolour"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewprofile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cartgreen">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/profile_round_1342_svgrepo_com"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/yeon"
+                android:text="View Profile"
+                android:textSize="20sp"
+                android:textColor="@color/textcolour"
+                app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                app:layout_constraintStart_toStartOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:outlineSpotShadowColor="@color/textcolour"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pastjourney"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cartgreen">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/history_svgrepo_com"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/yeon"
+                android:text="History"
+                android:textColor="@color/textcolour"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                app:layout_constraintStart_toStartOf="@+id/imageView10"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startbutton"
+        android:layout_width="317dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/nextbut"
+        android:text="Start Journey"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Main Menu Page"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
