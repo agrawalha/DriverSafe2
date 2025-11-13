@@ -41,7 +41,13 @@ buildFeatures{
 }
 
 dependencies {
-
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.google.mlkit:face-detection:16.1.5")
+    implementation("androidx.camera:camera-core:1.3.4")
+    implementation("androidx.camera:camera-camera2:1.3.4")
+    implementation("androidx.camera:camera-lifecycle:1.3.4")
+    implementation("androidx.camera:camera-view:1.3.4")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -62,7 +68,9 @@ dependencies {
     implementation("com.github.chrisbanes:PhotoView:2.3.0")
     implementation ("com.squareup.okhttp3:logging-interceptor:4.12.0")
     implementation("androidx.navigation:navigation-fragment-ktx")
+    implementation("com.android.volley:volley:1.2.1")
     implementation("androidx.navigation:navigation-ui-ktx")
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
     implementation("androidx.core:core-splashscreen:1.0.1")
     androidTestImplementation(libs.androidx.espresso.core)
 }

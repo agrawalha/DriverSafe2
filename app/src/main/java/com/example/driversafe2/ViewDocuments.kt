@@ -1,5 +1,6 @@
 package com.example.driversafe2
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -36,6 +37,10 @@ class ViewDocuments : AppCompatActivity() {
         username = tempUsername
         databaseReference = FirebaseDatabase.getInstance().reference
         retrivemenuitems(username)
+        binding.bac.setOnClickListener {
+            startActivity(Intent(this,SelectionPage::class.java))
+            finish()
+        }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
