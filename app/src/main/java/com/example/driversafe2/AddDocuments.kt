@@ -1,6 +1,7 @@
 package com.example.driversafe2
 
 import android.content.Context
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -57,6 +58,10 @@ class AddDocuments : AppCompatActivity() {
                 return@setOnClickListener
             }
             uploaddata(idtype, expirydate, idimage!!)
+        }
+        binding.bac.setOnClickListener {
+            startActivity(Intent(this,SelectionPage::class.java))
+            finish()
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -153,5 +158,7 @@ class AddDocuments : AppCompatActivity() {
                     Toast.makeText(this@AddDocuments, "Failed to save to database", Toast.LENGTH_SHORT).show()
                 }
             }
+
     }
+
 }
